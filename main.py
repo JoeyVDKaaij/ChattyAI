@@ -47,7 +47,7 @@ while True:
 
     print("listening")
     # Listen to the user speaking.
-    message = speechtotext_manager.SpeechToTextContinuous()
+    message = speechtotext_manager.SpeechToTextContinuous(stopkey='p')
     print(message)
 
     if message == '':
